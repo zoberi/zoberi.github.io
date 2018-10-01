@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutorial</title>
+<style>
+ h1{color: green;
+ }
+ h2{color: red;
+ }
+ h3{color:purple;
+  }
+ h4{color:gray;
+ 	font-family: rock salt,cursive;
+  }
+ p{color: orange;
+ }
+   body{background-color: black;
+   }
+td,th,tr{color: green;
+	line-height: 20px;
+	font-family: rock salt,cursive;
+	max-width: 700px;
+   max-height: 1200px;
+   }
+	h1,h2,h3{line-height: 100px;	
+	   font-family: rock salt,cursive;      
+	}
+	img{max-height:1200px;
+		max-width:900px;
+	  }
+</style>
+</head>
+<body>
+<h1 align="center">tutorial de progamação em C</h1>
+ <h2> O que é progamar um computador?</h2> 
+ <table>
+ 	<tr>
+ <thead>
+ <img src="https://www.wikihow.com/images_en/thumb/a/ae/Start-Learning-Computer-Programming-Step-1-Version-4.jpg/v4-728px-Start-Learning-Computer-Programming-Step-1-Version-4.jpg">
+  </thead>
+  <td>
+  	Programação é o processo de escrita, teste e manutenção de um programa de computador. O programa é escrito em uma linguagem de programação, embora seja possível, com alguma dificuldade, escrevê-lo diretamente em linguagem de máquina. Diferentes partes de um programa podem ser escritas em diferentes linguagens.
+  </td>
+ <table border="1px"; >
+ 	<tr>
+ 		<h2> Exemplo de um Programa: </h2>		
+ 		<td>	
+           <p>  // Exemplo de programa em C </p>
+           <p> // Isto é uma linha de comentário</p>
+           <p> void main()</p>
+{ 
+           <p> int a;  </p>
+           <p>// declara a variável "a"</p>
+           <p> a = 3 + 2;        // soma 3 com 2 </p>
+}
+ 		</td>
+ 		<td>
+ 			Um programa em C é composto por um conjunto de Funções. A função pela qual o programa começa a ser executado chama-se main.
+Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula).
+Um programa em C deve ser Identado para que possa ser lido com mais facilidade.
+<p>Todas as variáveis tem que ser declaradas antes de serem usadas;</p>
+<p> Não há uma inicialização implícita na declaração.</p>
+ 		</td>
+ 	</tr>
+ </table>
+   <table border="1px";>
+   	<tr>
+   		<h2>Tipos de variaveis: </h2>
+   		<td>
+   			
+
+
+          <h3> Tipo Valores Válidos:</h3>
+          <p> char letras e símbolos:'a',  'b', 'H', '^', '*','1','0'</p>
+          <p> int de -32767 até 32767 (apenas números inteiros).</p>
+          <p> float	de -3.4 x 1038 até +3.4 x 10+38com até 6 dígitos de precisão.</p>
+          <p> double de -1.7 x 10308 até +1.7 x 10+308com até 10 dígitos de precisão.</p>
+   		</td>
+   	</tr>
+   </table> 
+   <table border="1px";>
+   	<tr>
+   		<h2>Operadores Aritiméticos: </h2>
+   		<td>  			
+ <p>(*)(/):multiplicação e divisão </p> 
+ <p>(%):módulo (reto da divisão)</p>
+ <p>(+)(-):soma e subtração</p>
+   	    </td>
+   	    <td>
+   	    	<h3> Pode-se usar parênteses para alterar a precedência. </h3>	
+   	    </td>	
+   	</tr>
+   </table>
+   <table border="1px";>
+   	<h2> Expressões Lógicas: </h2>
+   	<tr>
+   		<td>
+        	<p>(==):  Igual a.
+            <p>(!=):  Diferente.
+            <p>(>=):  Maior ou igual.
+            <p>(>):   Maior que.
+            <p>(<):	  menor que.
+            <p>(<=):  Menor ou igual.	
+   		</td>
+   		<td>
+   		<h4>	Por exemplo,  (3 > 2) é uma expressão lógica que possui valor verdadeiro.</h4><p> Por outro lado, (4 < 1) é uma expressão lógica que possui valor falso.</p> 
+  Os operadores (< e >) usados nos exemplos acima são chamados de operadores relacionais pois possibilitam saber qual a relação existente entre seus dois operandos. Além destes dois existem mais 4 operadores relacionais, que podem ser vistos na tabela a esquerda.
+   		</td>
+   	</tr>
+   </table>
+   <table border="1px";>
+   	<tr>
+   	   <h2>condição:</h2>
+   	   <td>
+   	   	<p>Formato 1:</p>
+
+<p>if (expr_log)</p>
+   <p>comando1; // executado se "expr_log" for verdadeira</p>
+<p>comando2; // executado sempre independente da condição</p>
+
+<p>Formato 2:</p>
+
+<p>if (expr_log)</p>
+  <p>comando1; // executado se "expr_log" for verdadeira</p>
+<p>else comando2; // executado se "expr_log" for falsa</p>
+<p>comando3; // executado sempre, independente</p>
+         <p> // do resultado do teste</p>
+   	   </td>
+   	   <td>
+   	   	O comando IF serve para alterar o fluxo de execução de um programa em C baseado no valor, verdadeiro ou falso, de uma expressão lógica.
+   	   	<p>Utilizamos estruturas de seleção quando existem instruções dentro do programa que somente devem executar se satisfizerem a uma determinada condição. Por exemplo, só irei na aula presencial de CBP se não chover. Só passarei nesta disciplina se obtiver media superior ou igual a 7,0 e se a presença for igual ao superior a 85% das aulas dadas.</p>
+   	   	<h4>Se a condição colocada após o IF não obtiver resultado verdadeiro, automaticamente serão feitas as instruções que estão dentro do ELSE.</h4>
+   	   </td>
+   	</tr>
+
+   </table>
+   <table border="1px";>
+   	<h2>repetição: </h2>
+   	<td>
+   		<p>int continua, contador;</p>
+ <p>continua = 's'; </p>
+ <p>contador = 0;</p>
+
+ <p>while (continua == 's')  // enquanto for igual a 's'</p> 
+{ 
+<p>// comandos a serem repetidos</p>
+
+   <p>printf("Repentindo....\n");</p>
+
+   <p>contador = contador + 1;</p>
+
+  <p> printf("Tecle 's' se deseja continuar\n");</p> 
+   <p>continua = getch();</p> 
+}
+
+<p>if (contador == 0) </p>
+  <p> printf("O bloco NAO foi repetido."); </p>
+<p>else printf("O bloco foi repetido %d vezes", contador);</p>
+
+
+   	</td>
+   	<td>
+   		<h3>O funcionamento é o seguinte:</h3>
+   		<h4>1: Testa a condição;</h4>
+<p>2: Se a condição for falsa então pula todos os comandos do bloco subordinado ao while e passa a executar os comandos após o bloco do while.</p>
+<h4>3: Se  condição for verdadeira então executa cada um dos comandos do bloco subordinado ao while.</h4>
+<p>4: Após executar o último comando do bloco do while volta ao passo 1.</p>
+<h4> O comando while deve ser usado sempre que:</h4>
+<p>não soubermos exatamente quantas vezes o laço deve ser repetido;</p>
+<h4> o teste deva ser feito antes de iniciar a execução de um bloco de comandos;</h4>
+ <p>houver casos em que o laço não deva ser repetido nenhuma vez.</p>
+   	</td>
+
+   	
+
+   </table>
+
+</body>
+</html> 
