@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caculadora</title>
+<style type="text/css">
+	p{
+		font-size: 18px;
+	}
+	h1{
+		font-size: 40px;
+	}
+</style>
+<script type="text/javascript">
+   function calcularjuros(){
+   	var formulario = document.getElementById("formulario");
+   		var valorinicial = +formulario.valorinicial.value;
+   		
+   		var taxa = +formulario.taxa.value;
+   		
+   		var prasomensal = +formulario.prasomensal.value;
+   		
+   		var taxa2 = 1+taxa/100;
+   		
+   		var taxapraso = Math.pow(taxa2,prasomensal);
+   		
+   		var valorfinal = valorinicial * taxapraso;
+		
+   		var valorjuros = valorfinal - valorinicial;
+   		
+   		
+   		formulario.valorjuros.value = valorjuros.toFixed(2);
+   	}
+	
+</script>
+</head>
+<body>
+	<h1>Calculadora de Juros Composto</h1>
+	<p>Calcular Juros:</p>
+	<p>Informe o valor base, a taxa de juros por ex: 10 % e o valor de quantos parcelas foram dividias mensalmente.</p>
+	
+	<form id="formulario">
+	<fieldset>
+
+	<label for="result">Valor Base:</label>
+	<input type="text" name="valorinicial"/></p>
+	
+	<label for="result">Taxa %:</label>
+	<input type="text" name="taxa"/></p>
+
+	<label for="result">Praso mensal:</label>
+	<input type="text" name="prasomensal"/></p>
+
+	<label for="result">Valor do Juros:</label>
+	<input type="text" name="valorjuros" disabled="disabled" /></p>
+
+
+<a href="#"onclick="calcularjuros();">Calcular</a>
+	</fieldset>
+	</form>
+</body>
+</html>
